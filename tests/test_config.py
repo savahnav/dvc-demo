@@ -12,3 +12,10 @@ def test_generic():
     with pytest.raises(NotInRange): 
         if a not in range(10,20):
             raise NotInRange
+
+# if test _ is not written will not pick something method as it is part of convention
+def test_something():
+    a=2
+    b=2
+    assert True
+    
